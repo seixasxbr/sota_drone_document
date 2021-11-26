@@ -2,7 +2,7 @@
 % abntex2-modelo-trabalho-academico.tex, v-1.9.7 laurocesar
 % Copyright 2012-2018 by abnTeX2 group at http://www.abntex.net.br/ 
 % 
-% This work consists of the files ........
+% This work consists of the files 
 % 
 % -----------------------------------------------------------------------------
 % Modelo para desenvolvimento de documentação de projetos acadêmicos
@@ -21,7 +21,7 @@
 %
 % Fancy page , chapters and sections headings
 %\documentclass[fancyheadings, fancychapter, subook]{Classes/a-prj}
-\documentclass[fancyheadings, fancychapter, sureport]{Classes/a-prj}
+\documentclass[fancyheadings, fancychapter, sureport]{Classes/a-report}
 %
 % -----------------------------------------------------------------------------
 % Alguns comandos para a fancy page headings)
@@ -112,6 +112,8 @@
 \usepackage{lipsum}
 \usepackage{caption}
 \usepackage{subcaption}
+\usepackage{ragged2e}
+\justifying
 %
 \makeindex 
 \setlength{\LTcapwidth}{\textwidth}
@@ -143,30 +145,28 @@
 	%\faculty{Programa de...}
 	%\school{Escola de...}
 % 
-    %\course{Engenharia Elétrica}
-    \typework{Estudo do Estado da Arte}
+    % \course{Engenharia Elétrica}
+    % \typework{Relatório Final}
 % 
 	%\course{Mestrado em Modelagem Computacional e Tecnologia Industrial}
-	%\typework{Disserta\c{c}\~ao de mestrado}
-	%\typework{Exame de Qualificação de Mestrado}
+	\typework{Estado da Arte}
+	% \typework{Exame de Qualificação de Mestrado}
 % 
 	%\course{Engenharia Elétrica}
-	%\typework{Tese de doutorado}
+	% \typework{Tese de doutorado}
 	%\typework{Exame de Qualificação de doutorado}
 %
 % -------------------------------------------------------------------------------
 % Informações gerais
-    \thesistitle{Quadrirotor}
+    \thesistitle{Estado da Arte : Quadrotores}
     \hidevolume
     \thesisvolume{Volume 1 of 1}
-    \thesisauthor{Brenda Alencar}
-    \thesisauthorr{Felipe Mohr}
-
+    \thesisauthor{Mateus Zarth Seixas}
+    % \thesisauthorr{Rick Deckard}
     \thesisadvisor{Prof. Marco Reis, M.Eng.}
     %\hidecoadvisor
     %\thesiscoadvisor{Marco Reis}
-    \thesisdegreetitle{Bacharel em Engenharia}
-    \thesismonthyear{Agosto de 2020}
+    \thesismonthyear{Novembro de 2020}
 % 
     \maketitlepage
 %
@@ -185,6 +185,8 @@
         \include{Others/abstract}
         % Make list of contents, tables and figures
         \thesiscontents
+        %\pdfbookmark[1]{Lista de Tabelas}{lot} \listoftables
+        %\newpage
         %Include other required section
         %\include{Others/abbreviation}
         %\include{Others/simbolos}
@@ -206,7 +208,7 @@
     \begin{thesisappendices}
         \include{Appendices/diagmec}
         \include{Appendices/diagele}
-        \include{Appendices/logbook}
+        %\include{Appendices/logbook}
     \end{thesisappendices}
 %
 % ----------------------------------------------------------------------------
